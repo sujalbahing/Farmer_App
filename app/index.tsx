@@ -1,11 +1,11 @@
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   return (
-     <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-xl font-bold text-green-500">
-        Welcome to Farmers App!
-      </Text>
-    </View>
+    <SafeAreaView className="flex-1 bg-primary-100" edges={["top"]}>
+      <View className="h-[200px] bg-primary-100" />
+      <View className="flex-1 bg-primary-200" />
+    </SafeAreaView>
   );
 }
